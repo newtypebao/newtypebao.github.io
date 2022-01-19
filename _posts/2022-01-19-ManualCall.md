@@ -11,6 +11,7 @@ tag: java,Spring,RestTemplate
 ```
 	public static void main(String[] args) {
 		RestTemplate restTemplate = new RestTemplate();
+		restTemplate.getMessageConverters().set(1,new StringHttpMessageConverter(StandardCharsets.UTF_8));
 		HttpHeaders requestHeaders = new HttpHeaders();
 		requestHeaders.setBearerAuth("tokenString");
 		requestHeaders.setContentType(MediaType.APPLICATION_JSON);
@@ -26,6 +27,7 @@ tag: java,Spring,RestTemplate
 ```
 	public static void main(String[] args) {
 		RestTemplate restTemplate = new RestTemplate();
+		restTemplate.getMessageConverters().set(1,new StringHttpMessageConverter(StandardCharsets.UTF_8));
 		HttpHeaders requestHeaders = new HttpHeaders();
 		requestHeaders.setBearerAuth("tokenString");
 		HttpEntity<String> requestEntity = new HttpEntity<>(null, requestHeaders);
