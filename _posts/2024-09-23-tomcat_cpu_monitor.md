@@ -2,7 +2,7 @@
 layout: post
 title: 基于tomcat服务器的CPU使用率，重启tomcat
 date: 2024-09-23
-tag: tomcat,linux,cpu,script
+tag: Tomcat
 ---
 
 基于tomcat部署的javaweb项目中可能会遇到下面这个场景：由于应用功能里有个大报表、大查询又或者别的复杂的逻辑，把某一个tomcat所在服务器的cpu给搞满了。此时这个tomcat上的用户都巨卡。
